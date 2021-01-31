@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/9899fcd461.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
-
-<body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div class="row">
-
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
-    </div>
+  <body>
+    <h1>Repeat After Simon</h1>
+    <h3>Click or press any square to start, then follow the pattern.</h3>
 
     <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
+      <button type="button" class="btn green" id="btn-up">
+        <img src="/images/up-arrow.svg" alt="left arrow" />
+      </button>
     </div>
-
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="game.js"></script>
-</body>
-
+    <div class="row">
+      <button type="button" class="btn red" id="btn-left">
+        <img src="/images/left-arrow.svg" alt="left arrow" />
+      </button>
+      <button type="button" class="btn yellow" id="btn-down">
+        <img src="/images/down-arrow.svg" alt="left arrow" />
+      </button>
+      <button type="button" class="btn blue" id="btn-right">
+        <img src="/images/right-arrow.svg" alt="left arrow" />
+      </button>
+    </div>
+    <div class="row">
+      <button type="button" id="repeat-pattern-btn">Repeat the pattern</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+  </body>
 </html>
